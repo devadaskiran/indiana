@@ -1,0 +1,71 @@
+@import 'assets/scss/variables.scss';
+
+.wrapper {
+    & :global(.slick-slider) {
+        background-color: $bg;
+        & :global(.slick-list) {
+            & :global(.slick-slide) {
+                & .slide-wrapper {
+                    & :global(.container-global) {
+                        min-height: 70vh;
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 3.75rem;
+                        padding: 3.75rem 0;
+                        & .banner-text {
+                            width: 40%;
+                            & h1 {
+                                font-size: $textExtraLarge;
+                                margin-bottom: 2.5rem;
+                                line-height: 1.25;
+                                font-family: $secondaryFont;
+                                letter-spacing: 1px;
+                                & span {
+                                    display: block;
+                                    color: $secondary;
+                                    font-size: $textExtraLarge + 0.25rem;
+                                }
+                            }
+                            & p {
+                                line-height: 1.5;
+                                font-size: $textSmall   ;
+                            }
+                        }
+                        & .banner-image {
+                            width: 60%;
+                            & img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & :global(.slick-prev),
+        & :global(.slick-next) {
+            display: none !important;
+        }
+        & :global(.slick-dots) {
+            bottom: 1rem;
+            display: flex !important;
+            justify-content: center;
+            & li {
+                margin: 0;
+                width: 1rem;
+                height: 1rem;
+                & button {
+                    margin: 0;
+                    width: 1rem;
+                    height: 1rem;
+                    &:before {
+                        width: 1rem;
+                        height: 1rem;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}

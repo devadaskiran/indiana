@@ -1,0 +1,69 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  padding: 7.5rem 0;
+  color: $textDark;
+  text-align: center;
+  background: rgba($secondary, 0.075);
+  background-image: url('../../assets/images/pattern.png');
+  background-size: 100%;
+  background-attachment: fixed;
+  box-shadow: inset 0px -10px 20rem 0 rgba($bg, 0.25);
+
+  & h2 {
+    font-size: $textLarge + 0.5rem;
+    margin-bottom: 5rem;
+    font-family: $secondaryFont;
+    letter-spacing: 1px;
+  }
+
+  &.expanded {
+    .d-flex {
+      overflow: hidden;
+
+      .card {
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .card {
+      width: calc(33.333% - 6.5rem);
+      max-width: 25rem;
+      background-size: cover;
+      min-height: 27.5rem;
+      background-position: center top;
+      position: relative;
+      cursor: pointer;
+      & .texts {
+        padding: 1rem 1.75rem;
+        background-color: rgba($bg, 0.85);
+        text-align: left;
+        position: absolute;
+        bottom: 2.5rem;
+        width: calc(100% - 8.5rem);
+        color: $textLight;
+        & h4 {
+          font-size: $textPrimary;
+        }
+      }
+    }
+  }
+}
+
+.expandButton {
+  cursor: pointer;
+  color: $primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}

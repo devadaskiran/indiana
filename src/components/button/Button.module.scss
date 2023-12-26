@@ -1,0 +1,42 @@
+@import 'assets/scss/variables.scss';
+
+.wrapper {
+    border: 0;
+    font-family: $primaryFont;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+    &.default {
+        border-radius: 0;
+        padding: 1rem 1.25rem;
+    }
+    &.rounded {
+        border-radius: 2rem;
+    }
+    &.small {
+        font-size: 95%;
+        padding: 0.45rem 0.75rem;
+    }
+    &.color-error {
+        background-color: $error;
+        color: $textLight;
+        &:hover {
+            background-color: darken($error, 10%);
+        }
+    }
+    &.color-primary {
+        background-color: $primary;
+        color: $textLight;
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    }
+    &.outlined {
+        border: 1px solid;
+        padding: 1rem;
+    }
+    &.rounded-outlined {
+        border-radius: 2rem;
+        border: 1px solid;
+    }
+}

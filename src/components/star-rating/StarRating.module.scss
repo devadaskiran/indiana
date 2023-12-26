@@ -1,0 +1,14 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  gap: 0.25rem;
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgba($bg, 0.125);
+    stroke: rgba($bg, 0.25);;
+    &.active {
+      fill: $gold;
+    }
+  }
+}

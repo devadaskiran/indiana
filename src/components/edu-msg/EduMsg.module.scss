@@ -1,0 +1,42 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  padding: 7.5rem 0;
+  color: $textDark;
+  text-align: center;
+  background-color: $bgLight;
+  & .image-wrapper {
+    width: 50%;
+    position: relative;
+    & img {
+      width: 100%;
+    }
+    & .seal {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  & .text-wrapper {
+    width: 50%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-end;
+    & h2 {
+      font-size: $textLarge + 0.5rem;
+      font-family: $secondaryFont;
+      letter-spacing: 1px;
+    }
+    & p {
+      font-size: $textSmall;
+      margin-bottom: 2.5rem;
+      opacity: 0.65;
+    }
+    & .sign {
+      height: 5rem;
+      margin-left: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  padding: 7.5rem 0;
+  color: $textDark;
+  text-align: center;
+  & h2 {
+    font-size: $textLarge + 0.5rem;
+    margin-bottom: 5rem;
+    font-family: $secondaryFont;
+    letter-spacing: 1px;
+  }
+  & .slide-wrapper {
+    & .card {
+        background-color: rgba($bg, 0.15);
+        padding: 5rem;
+        display: flex;
+        gap: 2.5rem;
+        & .avatar-wrapper {
+          width: 20rem;
+          height: 25rem;
+          & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        & .text-wrapper {
+          width: calc(100% - 20rem);
+          text-align: left;
+          & p {
+            font-size: $textPrimary;
+            margin-top: 2.5rem;
+          }
+          & h3 {
+            margin-top: 2.5rem;
+            font-size: $textPrimary;
+            & span {
+              font-weight: 400;
+              display: block;
+            }
+          }
+        }
+    }
+  }
+  & :global(.slick-arrow),  & :global(.slick-dots) {
+    display: none !important;
+  }
+}

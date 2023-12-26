@@ -1,0 +1,11 @@
+@import 'assets/scss/variables.scss';
+
+.wrapper {
+  padding: 2.5rem;
+  box-shadow: 0 0 10rem 0px rgba($bg, 0.125);
+  transition: ease-in-out 0.85s all;
+  &:hover {
+    box-shadow: 0 0 10rem 0px rgba($bg, 0.5);
+  }
+}
+  

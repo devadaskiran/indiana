@@ -1,0 +1,67 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  border-bottom: 1px solid rgba($textLight, 0.25);
+  transition: background-color 0.25s ease-in-out,
+    border-bottom 0.25s ease-in-out;
+  background-color: $bg;
+  position: relative;
+  & header {
+    padding: 1.35rem 0;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    z-index: 2;
+    background-color: $bg;
+    & ul {
+      & li {
+        cursor: pointer;
+        font-size: $textPrimary - 0.2rem;
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+    & .logo-wrapper {
+      & h2 {
+        font-family: $secondaryFont;
+        letter-spacing: 1px;
+        font-size: $textLarge + 0.5rem;
+      }
+      & img {
+        height: 6rem;
+      }
+    }
+  }
+
+  & .second-header {
+    background-color: $secondary;
+    color: $textDark;
+    padding: 0.5rem 0;
+    transition: all ease-in-out 0.5s;
+    z-index: 2;
+    position: relative;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+    border-bottom: 1px solid $secondary;
+    & header {
+      background-color: darken(rgba($bg, 0.75), 10%);
+      padding: 0.75rem 0;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 100%;
+    top: 0;
+    filter: blur(100px);
+  }
+}

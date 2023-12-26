@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue.eot');
+    src: url('Revue.eot?#iefix') format('embedded-opentype'),
+        url('Revue.woff2') format('woff2'),
+        url('Revue.woff') format('woff'),
+        url('Revue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue_1.eot');
+    src: url('Revue_1.eot?#iefix') format('embedded-opentype'),
+        url('Revue_1.woff2') format('woff2'),
+        url('Revue_1.woff') format('woff'),
+        url('Revue_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue-Italic.eot');
+    src: url('Revue-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Revue-Italic.woff2') format('woff2'),
+        url('Revue-Italic.woff') format('woff'),
+        url('Revue-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue_cyr.eot');
+    src: url('Revue_cyr.eot?#iefix') format('embedded-opentype'),
+        url('Revue_cyr.woff2') format('woff2'),
+        url('Revue_cyr.woff') format('woff'),
+        url('Revue_cyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue BT';
+    src: url('RevueBT-Regular.eot');
+    src: url('RevueBT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RevueBT-Regular.woff2') format('woff2'),
+        url('RevueBT-Regular.woff') format('woff'),
+        url('RevueBT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue_2.eot');
+    src: url('Revue_2.eot?#iefix') format('embedded-opentype'),
+        url('Revue_2.woff2') format('woff2'),
+        url('Revue_2.woff') format('woff'),
+        url('Revue_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('Revue-Bold.eot');
+    src: url('Revue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Revue-Bold.woff2') format('woff2'),
+        url('Revue-Bold.woff') format('woff'),
+        url('Revue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
