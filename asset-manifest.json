@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/indiana/static/css/main.efeb0292.css",
+    "main.css": "/indiana/static/css/main.997eaaae.css",
     "main.js": "/indiana/static/js/main.fac659a5.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/pattern.png": "/indiana/static/media/pattern.4a37b97772f039172522.png",
@@ -42,12 +42,12 @@
     "static/media/Revue_cyr.woff2": "/indiana/static/media/Revue_cyr.b3bf9d6c233f81047418.woff2",
     "static/media/Revue-Italic.woff2": "/indiana/static/media/Revue-Italic.3f039e72bc5f5ce30d61.woff2",
     "index.html": "/indiana/index.html",
-    "main.efeb0292.css.map": "/indiana/static/css/main.efeb0292.css.map",
+    "main.997eaaae.css.map": "/indiana/static/css/main.997eaaae.css.map",
     "main.fac659a5.js.map": "/indiana/static/js/main.fac659a5.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efeb0292.css",
+    "static/css/main.997eaaae.css",
     "static/js/main.fac659a5.js"
   ]
 }
