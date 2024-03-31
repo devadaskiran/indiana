@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/indiana/static/css/main.6b4e9771.css",
-    "main.js": "/indiana/static/js/main.2afc07ea.js",
+    "main.js": "/indiana/static/js/main.3b6d0cb0.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
-    "static/media/_Q6A9028.jpeg": "/indiana/static/media/_Q6A9028.016c2b05b00b6f5d6abc.jpeg",
+    "static/media/Q6A9028.jpeg": "/indiana/static/media/Q6A9028.016c2b05b00b6f5d6abc.jpeg",
     "static/media/pattern.png": "/indiana/static/media/pattern.4a37b97772f039172522.png",
     "static/media/parentImage2.jpeg": "/indiana/static/media/parentImage2.09038defa67964ee9466.jpeg",
     "static/media/parentImage1.jpeg": "/indiana/static/media/parentImage1.a1152ba561e24ff7d571.jpeg",
@@ -49,11 +49,11 @@
     "static/media/Revue-Italic.woff2": "/indiana/static/media/Revue-Italic.3f039e72bc5f5ce30d61.woff2",
     "index.html": "/indiana/index.html",
     "main.6b4e9771.css.map": "/indiana/static/css/main.6b4e9771.css.map",
-    "main.2afc07ea.js.map": "/indiana/static/js/main.2afc07ea.js.map",
+    "main.3b6d0cb0.js.map": "/indiana/static/js/main.3b6d0cb0.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b4e9771.css",
-    "static/js/main.2afc07ea.js"
+    "static/js/main.3b6d0cb0.js"
   ]
 }
