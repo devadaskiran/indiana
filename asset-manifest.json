@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/indiana/static/css/main.6b4e9771.css",
-    "main.js": "/indiana/static/js/main.3b6d0cb0.js",
+    "main.css": "/indiana/static/css/main.a7ae2dde.css",
+    "main.js": "/indiana/static/js/main.98bef53e.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
     "static/media/Q6A9028.jpeg": "/indiana/static/media/Q6A9028.016c2b05b00b6f5d6abc.jpeg",
@@ -9,13 +9,16 @@
     "static/media/parentImage2.jpeg": "/indiana/static/media/parentImage2.09038defa67964ee9466.jpeg",
     "static/media/parentImage1.jpeg": "/indiana/static/media/parentImage1.a1152ba561e24ff7d571.jpeg",
     "static/media/IMG-20230824-WA0099.jpeg": "/indiana/static/media/IMG-20230824-WA0099.12acd3d9cc46251b3ee9.jpeg",
+    "static/media/chairman_img.png": "/indiana/static/media/chairman_img.0738640026f158335bbc.png",
+    "static/media/IMG-20230920-WA0054.jpeg": "/indiana/static/media/IMG-20230920-WA0054.bf572ac67113341b82a9.jpeg",
     "static/media/school-imag2.jpeg": "/indiana/static/media/school-imag2.715cc81289a180a30940.jpeg",
+    "static/media/IMG-20230915-WA0251.jpeg": "/indiana/static/media/IMG-20230915-WA0251.665462cbe5b1e494f32b.jpeg",
     "static/media/school-imag1.jpeg": "/indiana/static/media/school-imag1.722fc69be9a5a1cfb936.jpeg",
     "static/media/IMG-20231004-WA0015.jpeg": "/indiana/static/media/IMG-20231004-WA0015.d683d8d6535a6cc8e7d4.jpeg",
+    "static/media/IMG-20230920-WA0061.jpeg": "/indiana/static/media/IMG-20230920-WA0061.7b79af15c975747e8735.jpeg",
     "static/media/chairman.jpeg": "/indiana/static/media/chairman.6c195f22d2d73563f89f.jpeg",
     "static/media/logo.png": "/indiana/static/media/logo.ded84725937baa69924c.png",
-    "static/media/A6qSOBw7GlduwIMPwJRyBR_00QI7ocHFRJnXREJ_vj4=_plaintext_jpeg": "/indiana/static/media/A6qSOBw7GlduwIMPwJRyBR_00QI7ocHFRJnXREJ_vj4=_plaintext_638319977131747811.fd4a14e4b300d1ffe37c.jpeg",
-    "static/media/principal.jpeg": "/indiana/static/media/principal.65b217c00e7d011ee364.jpeg",
+    "static/media/signature.png": "/indiana/static/media/signature.492100deabb505db684b.png",
     "static/media/founder.jpeg": "/indiana/static/media/founder.f9ac4f995c15d9fa21d8.jpeg",
     "static/media/Revue-Bold.eot": "/indiana/static/media/Revue-Bold.e3f701388e2768fa2d36.eot",
     "static/media/Revue-Bold.ttf": "/indiana/static/media/Revue-Bold.92a11b3a85ea6684771d.ttf",
@@ -48,12 +51,12 @@
     "static/media/Revue_cyr.woff2": "/indiana/static/media/Revue_cyr.b3bf9d6c233f81047418.woff2",
     "static/media/Revue-Italic.woff2": "/indiana/static/media/Revue-Italic.3f039e72bc5f5ce30d61.woff2",
     "index.html": "/indiana/index.html",
-    "main.6b4e9771.css.map": "/indiana/static/css/main.6b4e9771.css.map",
-    "main.3b6d0cb0.js.map": "/indiana/static/js/main.3b6d0cb0.js.map",
+    "main.a7ae2dde.css.map": "/indiana/static/css/main.a7ae2dde.css.map",
+    "main.98bef53e.js.map": "/indiana/static/js/main.98bef53e.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b4e9771.css",
-    "static/js/main.3b6d0cb0.js"
+    "static/css/main.a7ae2dde.css",
+    "static/js/main.98bef53e.js"
   ]
 }
