@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/indiana/static/css/main.290dcfe0.css",
-    "main.js": "/indiana/static/js/main.69cab84e.js",
+    "main.css": "/indiana/static/css/main.88ae5737.css",
+    "main.js": "/indiana/static/js/main.e22393df.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/Swing_Kid_Playground.mp4": "/indiana/static/media/Swing_Kid_Playground.968ca5f90f9d47d9ed80.mp4",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
@@ -50,12 +50,12 @@
     "static/media/Revue_cyr.woff2": "/indiana/static/media/Revue_cyr.b3bf9d6c233f81047418.woff2",
     "static/media/Revue-Italic.woff2": "/indiana/static/media/Revue-Italic.3f039e72bc5f5ce30d61.woff2",
     "index.html": "/indiana/index.html",
-    "main.290dcfe0.css.map": "/indiana/static/css/main.290dcfe0.css.map",
-    "main.69cab84e.js.map": "/indiana/static/js/main.69cab84e.js.map",
+    "main.88ae5737.css.map": "/indiana/static/css/main.88ae5737.css.map",
+    "main.e22393df.js.map": "/indiana/static/js/main.e22393df.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.290dcfe0.css",
-    "static/js/main.69cab84e.js"
+    "static/css/main.88ae5737.css",
+    "static/js/main.e22393df.js"
   ]
 }
