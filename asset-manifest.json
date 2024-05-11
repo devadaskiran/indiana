@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/indiana/static/css/main.1e053878.css",
-    "main.js": "/indiana/static/js/main.90984e44.js",
+    "main.js": "/indiana/static/js/main.339e2453.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/Swing_Kid_Playground.mp4": "/indiana/static/media/Swing_Kid_Playground.968ca5f90f9d47d9ed80.mp4",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
@@ -38,6 +38,7 @@
     "static/media/Revue_1.eot": "/indiana/static/media/Revue_1.7da8ba03781db0e2d96e.eot",
     "static/media/Revue_1.ttf": "/indiana/static/media/Revue_1.72f1666eb655327a3348.ttf",
     "static/media/dhanyaks.jpg": "/indiana/static/media/dhanyaks.64fb947b23eb570c255a.jpg",
+    "static/media/sini.jpg": "/indiana/static/media/sini.3c5ac445a1ab2b61526d.jpg",
     "static/media/anamika.jpg": "/indiana/static/media/anamika.807218bd6f637dd5f3fc.jpg",
     "static/media/akshays.jpg": "/indiana/static/media/akshays.b3e569db4d85d176bb0e.jpg",
     "static/media/anni.jpg": "/indiana/static/media/anni.4a476c4ac5259fcc2122.jpg",
@@ -69,7 +70,6 @@
     "static/media/Revue-Italic.eot": "/indiana/static/media/Revue-Italic.782539ebff4b5ac6a569.eot",
     "static/media/Revue-Italic.ttf": "/indiana/static/media/Revue-Italic.2ee04fd2277302c18526.ttf",
     "static/media/RevueBT-Regular.woff": "/indiana/static/media/RevueBT-Regular.f8562999816362b23930.woff",
-    "static/media/sinims.jpg": "/indiana/static/media/sinims.03054659cefa14e18d5b.jpg",
     "static/media/summayya.jpg": "/indiana/static/media/summayya.20b2879d4ca7dc54edde.jpg",
     "static/media/nishash.jpg": "/indiana/static/media/nishash.5566f4f3f0037b77ea90.jpg",
     "static/media/seena.jpg": "/indiana/static/media/seena.fecd1ddec568b7845adc.jpg",
@@ -92,11 +92,11 @@
     "static/media/veena.jpg": "/indiana/static/media/veena.f083cfe2605df532a97a.jpg",
     "index.html": "/indiana/index.html",
     "main.1e053878.css.map": "/indiana/static/css/main.1e053878.css.map",
-    "main.90984e44.js.map": "/indiana/static/js/main.90984e44.js.map",
+    "main.339e2453.js.map": "/indiana/static/js/main.339e2453.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e053878.css",
-    "static/js/main.90984e44.js"
+    "static/js/main.339e2453.js"
   ]
 }
