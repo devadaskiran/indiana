@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/indiana/static/css/main.1e053878.css",
-    "main.js": "/indiana/static/js/main.7d92cb15.js",
+    "main.js": "/indiana/static/js/main.90984e44.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/Swing_Kid_Playground.mp4": "/indiana/static/media/Swing_Kid_Playground.968ca5f90f9d47d9ed80.mp4",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
@@ -51,6 +51,7 @@
     "static/media/teacher.jpeg": "/indiana/static/media/teacher.6b488a02d8ddf9e0444b.jpeg",
     "static/media/aswathy-eng.jpg": "/indiana/static/media/aswathy-eng.f45e58ee70555d445916.jpg",
     "static/media/binzy.jpg": "/indiana/static/media/binzy.a6fc224c856eca7f6503.jpg",
+    "static/media/teacher2.jpeg": "/indiana/static/media/teacher2.6b71d499dc44f236a727.jpeg",
     "static/media/maneesha.jpg": "/indiana/static/media/maneesha.f78b9de4aed842512e86.jpg",
     "static/media/aswathyss.jpg": "/indiana/static/media/aswathyss.bb8db959005c7fffb89f.jpg",
     "static/media/deepa.jpg": "/indiana/static/media/deepa.4d48be5801f798befede.jpg",
@@ -91,11 +92,11 @@
     "static/media/veena.jpg": "/indiana/static/media/veena.f083cfe2605df532a97a.jpg",
     "index.html": "/indiana/index.html",
     "main.1e053878.css.map": "/indiana/static/css/main.1e053878.css.map",
-    "main.7d92cb15.js.map": "/indiana/static/js/main.7d92cb15.js.map",
+    "main.90984e44.js.map": "/indiana/static/js/main.90984e44.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e053878.css",
-    "static/js/main.7d92cb15.js"
+    "static/js/main.90984e44.js"
   ]
 }
