@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/indiana/static/css/main.cda7b8e4.css",
-    "main.js": "/indiana/static/js/main.a883c287.js",
+    "main.js": "/indiana/static/js/main.2f715e9c.js",
     "static/js/787.785a4c54.chunk.js": "/indiana/static/js/787.785a4c54.chunk.js",
     "static/media/Swing_Kid_Playground.mp4": "/indiana/static/media/Swing_Kid_Playground.968ca5f90f9d47d9ed80.mp4",
     "static/media/811A9227.jpeg": "/indiana/static/media/811A9227.be4171f28df377f7226b.jpeg",
@@ -101,11 +101,11 @@
     "static/media/lg.woff2?io9a6k": "/indiana/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/indiana/index.html",
     "main.cda7b8e4.css.map": "/indiana/static/css/main.cda7b8e4.css.map",
-    "main.a883c287.js.map": "/indiana/static/js/main.a883c287.js.map",
+    "main.2f715e9c.js.map": "/indiana/static/js/main.2f715e9c.js.map",
     "787.785a4c54.chunk.js.map": "/indiana/static/js/787.785a4c54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cda7b8e4.css",
-    "static/js/main.a883c287.js"
+    "static/js/main.2f715e9c.js"
   ]
 }
