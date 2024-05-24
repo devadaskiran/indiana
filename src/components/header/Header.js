@@ -63,8 +63,7 @@ const Header = () => {
             <div className='d-flex align-items-center'>
               <ul className={`d-flex list-style-none gap-2 ${mobileMenu ? styles['mobile-menu'] : ''}`}>
                 <li>
-                  
-                  <Link>Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <Link to="/about">About Us</Link>

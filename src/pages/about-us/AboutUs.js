@@ -1,11 +1,11 @@
 import React from 'react';
-// import { MainLayout } from 'layout';
+import { MainLayout } from 'layout';
 import { Container } from 'components';
 import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
   return (
-    // <MainLayout>
+    <MainLayout>
       <div className={styles.wrapper}>
         <div className={styles.banner}>
           <h1>About</h1>
@@ -28,7 +28,7 @@ const AboutUs = () => {
           </p>
         </Container> 
       </div>
-    // </MainLayout>
+    </MainLayout>
   );
 };
 
