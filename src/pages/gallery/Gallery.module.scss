@@ -1,0 +1,48 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+    & .banner {
+        background-image: url('../../assets/images/about.jpg');
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        position: relative;
+        &:after {
+          content: '';
+          background-color: rgba($bg, 0.25);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+        & * {
+          position: relative;
+          z-index: 10;
+        }
+     }
+    & :global(.container-global) {
+        padding: 3rem 0;
+        & :global(.lg-react-element) {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            & > a {
+                width: 25%;
+                @include md {
+                    width: 50%;
+                }
+                @include sm {
+                    width: 100%;
+                }
+                & img {
+                    padding: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

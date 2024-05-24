@@ -1,14 +1,31 @@
 @import "assets/scss/variables.scss";
 
 .wrapper {
-  padding: 7.5rem 0;
+  padding: 5rem 0;
   color: $textDark;
   text-align: center;
+  @include md {
+    padding: 3.5rem 0;
+  }
+  @include sm {
+    padding: 1.5rem 0 0;
+  }
   & h2 {
-    font-size: $textLarge + 0.5rem;
+    font-size: $textLarge + 5px;
     margin-bottom: 5rem;
     font-family: $secondaryFont;
     letter-spacing: 1px;
+    @include lg {
+      font-size: $textLarge + 12.5px;
+    }
+    @include md {
+      font-size: $textLarge + 5px;
+      margin-bottom: 3.5rem;
+    }
+    @include sm {
+      font-size: $textLarge;
+      margin-bottom: 1.5rem;
+    }
   }
   & .slide-wrapper {
     & .card {
@@ -16,9 +33,31 @@
         padding: 5rem;
         display: flex;
         gap: 2.5rem;
+        @include md {
+          padding: 2.5rem;
+        }
+        @include sm {
+          padding: 1.5rem;
+        }
+        & > .avatar-wrapper {
+          @include lg {
+            display: none;
+          }
+        }
         & .avatar-wrapper {
           width: 20rem;
           height: 25rem;
+          @include lg {
+            width: 5rem;
+            max-height: 5rem;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+          @include sm {
+            width: 3.75rem;
+            max-height: 3.75rem;
+            margin-right: 1rem;
+          }
           & img {
             height: 100%;
             width: 100%;
@@ -28,9 +67,18 @@
         & .text-wrapper {
           width: calc(100% - 20rem);
           text-align: left;
+          @include lg {
+            width: 100%;
+          }
           & p {
             font-size: $textPrimary;
             margin-top: 2.5rem;
+            @include md {
+              font-size: $textMedium + 2px;
+            }
+            @include sm {
+              font-size: $textPrimary;
+            }
           }
           & h3 {
             margin-top: 2.5rem;
@@ -39,11 +87,34 @@
               font-weight: 400;
               display: block;
             }
+            @include lg {
+              margin-top: 0;
+            }
+          }
+        }
+        & .avatar-info {
+          @include lg {
+            margin-top: 1.5rem;
+          }
+          & .avatar-wrapper {
+            display: none;
+            @include lg {
+              display: block;
+            }
           }
         }
     }
   }
   & :global(.slick-arrow),  & :global(.slick-dots) {
     display: none !important;
+  }
+  & :global(.container-global) {
+    margin-bottom: 2.5rem;
+    @include lg {
+      padding: 0 3.5rem;
+    }
+    @include sm {
+      padding: 0 1.5rem;
+    }
   }
 }

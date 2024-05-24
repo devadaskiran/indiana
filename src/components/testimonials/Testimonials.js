@@ -29,9 +29,14 @@ const Testimonials = () => {
                 <div className={styles['text-wrapper']}>
                   <StarRating rating={testimonial.rating} />
                   <p>{testimonial.quote}</p>
-                  <h3>
-                    {testimonial.name}, <span>{testimonial.location}</span>
-                  </h3>
+                  <div className={`d-flex align-items-center ${styles['avatar-info']}`}>
+                    <div className={`mr-2 ${styles['avatar-wrapper']}`}>
+                      <img src={testimonial.photo} alt='Parents Avatar' />
+                    </div>
+                    <h3>
+                      {testimonial.name}, <span>{testimonial.location}</span>
+                    </h3>
+                  </div>
                 </div>
               </div>
             </Container>

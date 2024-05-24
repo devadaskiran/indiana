@@ -7,5 +7,8 @@
   &:hover {
     box-shadow: 0 0 10rem 0px rgba($bg, 0.5);
   }
+  @include xl2 {
+    padding: 2rem;
+  }
 }
   

@@ -3,13 +3,13 @@
 $cards-per-row: 4;
 
 .wrapper {
-  padding: 7.5rem 0;
+  padding: 5rem 0;
   color: $textDark;
   text-align: center;
   background-color: rgba($secondary, 0.075);
   transform: rotate(25deg);
   & h2 {
-    font-size: $textLarge + 0.5rem;
+    font-size: $textLarge + 5px;
     margin-bottom: 5rem;
   }
 
@@ -46,7 +46,7 @@ $cards-per-row: 4;
     }
 
     & h3 {
-      font-size: $textExtraLarge + 1rem;
+      font-size: $textExtraLarge + 10px;
       opacity: 0.05;
       transition: ease-in-out 0.85s all;
     }

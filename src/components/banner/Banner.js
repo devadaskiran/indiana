@@ -3,7 +3,7 @@ import React from 'react';
 import Slider from "react-slick";
 
 import { Container } from 'components';
-import schoolImage from 'assets/images/smart-indian-schoolgirl-rising-arm-answering-question-class.jpeg';
+import { BANNER_DATA } from 'data/Strings';
 import styles from './Banner.module.scss';
 
 const Banner = () => {
@@ -12,43 +12,28 @@ const Banner = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
   };
   return (
     <div className={styles.wrapper}>
       <Slider {...settings}>
-        <div className={styles['slide-wrapper']}>
-          <Container>
-            <div className={styles['banner-text']}>
-              <h1>
-                Welcome to <span>Indiana Public School</span>
-              </h1>
-              <p>
-                Indiana Public School is Attingal's exclusive English school, providing quality education from Pre-KG to 12th grade following the CBSE curriculum. As the only complete school in Attingal, we are dedicated to fostering academic excellence and holistic development for our students.
-              </p>
-            </div>
-            <div className={styles['banner-image']}>
-              <img src={schoolImage} alt='Indiana Public School, Attingal, Trivandrum.' />
-            </div>
-          </Container>
-        </div>
-        <div className={styles['slide-wrapper']}>
-          <Container>
-            <div className={styles['banner-text']}>
-              <h1>
-                Welcome to <span>Indiana Public School</span>
-              </h1>
-              <p>
-                Indiana Public School is Attingal's exclusive English school, providing quality education from Pre-KG to 12th grade following the CBSE curriculum. As the only complete school in Attingal, we are dedicated to fostering academic excellence and holistic development for our students.
-              </p>
-            </div>
-            <div className={styles['banner-image']}>
-              <img src={schoolImage} alt='Indiana Public School, Attingal, Trivandrum.' />
-            </div>
-          </Container>
-        </div>
+        {BANNER_DATA.map((slide) => (
+          <div key={slide.id} className={styles['slide-wrapper']}>
+            <Container>
+              <div className={styles['banner-text']}>
+                <h1>
+                  Welcome to <span>Indiana Public School</span> <small>- The Ultimate Dream of a Visionary for Promoting Global Excellence -</small>
+                </h1>
+                <p>{slide.subheading}</p>
+              </div>
+              <div className={styles['banner-image']}>
+                <img src={slide.image} alt={`Indiana Public School ${slide.id}`} />
+              </div>
+            </Container>
+          </div>
+        ))}
       </Slider>
-
     </div>
   );
 };

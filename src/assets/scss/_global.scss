@@ -89,3 +89,7 @@ $base-rem: 1rem;
     gap: $i * $base-rem;
   }
 }
+
+.no-scroll {
+  overflow: hidden !important;
+}

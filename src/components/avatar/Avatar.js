@@ -6,7 +6,7 @@ const Avatar = ({ fullName, designation, photo }) => {
 
   return (
     <div className={`d-flex align-items-center ${styles.wrapper}`}>
-      <div className={`d-flex align-items-center justify-content-center ${styles.photo}`}>
+      {/* <div className={`d-flex align-items-center justify-content-center avatar-photo-global ${styles.photo}`}>
         {photo ? (
           <img src={photo} alt={`Avatar of ${fullName}`} />
         ) : (
@@ -16,7 +16,7 @@ const Avatar = ({ fullName, designation, photo }) => {
       <div className={styles['text-wrapper']}>
         <h3>{fullName}</h3>
         <p>{designation}</p>
-      </div>
+      </div> */}
     </div>
   );
 };

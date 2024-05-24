@@ -10,6 +10,13 @@ const Button = ({ className, label, variant, size, color, onClick }) => {
     color === 'error' ? styles['color-error'] : color === 'secondary' ? styles['color-secondary'] : color === 'primary' ? styles['color-primary'] : color === 'success' ? styles['color-success'] : color === 'info' ? styles['color-info'] : color === 'warning' ? styles['color-warning'] : styles['color-inherit'],
   ];
 
+  if (variant) {
+    classNames.push(`variant-${variant}-global`);
+  }
+  else {
+    classNames.push(`button-global`);
+  }
+
   const filteredClassNames = classNames.filter(Boolean).join(' ');
 
   return (

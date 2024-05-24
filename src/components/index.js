@@ -11,6 +11,9 @@ export { default as RubberSeal } from './rubber-seal';
 export { default as MeetTheCrew } from './meet-the-crew';
 export { default as Testimonials } from './testimonials';
 export { default as StarRating } from './star-rating';
+export { default as IndKids } from './ind-kids';
+export { default as Modal } from './modal';
+export { default as AdmissionModal } from './admission-modal';
 
 
 

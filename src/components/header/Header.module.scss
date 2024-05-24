@@ -3,32 +3,142 @@
 .wrapper {
   border-bottom: 1px solid rgba($textLight, 0.25);
   transition: background-color 0.25s ease-in-out,
-    border-bottom 0.25s ease-in-out;
+  border-bottom 0.25s ease-in-out;
   background-color: $bg;
   position: relative;
+  @include lg {
+    transition: background-color 0.05s ease-in-out;
+  }
   & header {
     padding: 1.35rem 0;
     transition: all ease-in-out 0.5s;
     position: relative;
     z-index: 2;
     background-color: $bg;
+    @include lg {
+      transition: background-color 0.05s ease-in-out;
+      padding: 2.35rem 0;
+    }
+    @include sm {
+      padding: 1.5rem 0;
+    }
     & ul {
       & li {
         cursor: pointer;
-        font-size: $textPrimary - 0.2rem;
+        font-size: $textPrimary;
+        & a {
+          color: $light;
+          text-decoration: none;
+        }
+        @include lg {
+          font-size: $textLarge - 3.5px;
+        }
         &:hover {
           opacity: 0.85;
         }
       }
+      &:global(.gap-2) {
+        @include xl {
+          gap: 1.5rem;
+        }
+        @include lg {
+          gap: 0.75rem;
+        }
+      }
+      @include md {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($bg, 0.95);
+        top: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all ease-in-out 0.5s;
+      }
+      &.mobile-menu {
+        top: 0;
+      }
     }
     & .logo-wrapper {
+      color: $light;
+      text-decoration: none;
       & h2 {
         font-family: $secondaryFont;
         letter-spacing: 1px;
-        font-size: $textLarge + 0.5rem;
+        font-size: $textLarge + 6px;
+        line-height: 1;
+        @include md {
+          font-size: $textExtraLarge - 1.75px;
+        }
+        @include sm {
+          font-size: $textMedium;
+          margin-left: 5px;
+        }
+        
       }
       & img {
         height: 6rem;
+        @include xl2 {
+          height: 5rem;
+        }
+        @include lg {
+          height: 3.5rem;
+        }
+        @include md {
+          height: 4.25rem;
+        }
+        @include sm {
+          height: 2.5rem;
+        }
+      }
+    }
+    & .menu-icon {
+      margin-left: 2.5rem;
+      display: none;
+      @include sm {
+        margin-left: 1rem;
+      }
+      & svg {
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: $light;
+        cursor: pointer;
+        transition: all ease-in-out 0.25s;
+        @include sm {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+      @include md {
+        display: flex;
+      }
+      &.close-icon-active {
+        z-index: 2;
+      }
+    }
+    & :global(.container-global) {
+      @include sm {
+        padding: 0 1.75rem;
+      }
+    }
+    & :global(.button-global) {
+      @include lg {
+        font-size: $textLarge;
+        padding: 17.5px;
+      }
+      @include md {
+        font-size: $textLarge;
+      }
+      @include sm {
+        font-size: $textMedium - 2.5px;
+        padding: 10px;
+        margin-left: 0;
       }
     }
   }
@@ -40,6 +150,21 @@
     transition: all ease-in-out 0.5s;
     z-index: 2;
     position: relative;
+    & :global(.variant-rounded-global) {
+      min-width: 7.5rem;
+      @include lg {
+        margin-left: 0;
+        margin-top: 0.75rem;
+      }
+    }
+    & :global(.container-global) {
+      & p {
+        font-size: $textSmall;
+      }
+    }
+    @include lg {
+      display: none;
+    }
   }
 
   &.fixed {
@@ -52,16 +177,14 @@
     & header {
       background-color: darken(rgba($bg, 0.75), 10%);
       padding: 0.75rem 0;
+      @include lg {
+        padding: 1.25rem 0;
+      }
     }
   }
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    height: 100%;
-    top: 0;
-    filter: blur(100px);
+  & :global(.button-global span) {
+    @include lg {
+      display: none;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainLayout } from 'layout';
-import { About, Banner, EduMsg, MeetTheCrew, Testimonials } from 'components';
+import { About, Banner, EduMsg, IndKids, MeetTheCrew, Testimonials } from 'components';
 
 const Landing = () => {
   return (
@@ -8,6 +8,7 @@ const Landing = () => {
       <Banner/>
       <About/>
       <EduMsg/>
+      <IndKids/>
       <MeetTheCrew/>
       <Testimonials/>
     </MainLayout>

@@ -12,7 +12,7 @@ const About = () => {
     <div className={styles.wrapper}>
       <Container>
         <h2 dangerouslySetInnerHTML={{ __html: ABOUT_DATA.title }}></h2>
-        <div className={`justify-content-center gap-4 ${styles['d-flex-row']}`}>
+        <div className={`justify-content-center gap-4 ${styles['card-row']}`}>
           {cards.map((card, index) => (
             <Card className={`mb-2 ${styles.card}`} key={card.id}>
               <div className='d-flex align-items-center justify-content-between mb-2'>

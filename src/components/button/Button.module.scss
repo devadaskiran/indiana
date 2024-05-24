@@ -9,13 +9,21 @@
     &.default {
         border-radius: 0;
         padding: 1rem 1.25rem;
+        @include lg {
+            padding: 1.75rem 1.5rem;
+            font-size: $textPrimary;
+        }
     }
     &.rounded {
         border-radius: 2rem;
     }
     &.small {
-        font-size: 95%;
+        font-size: $textPrimary - 2px;
         padding: 0.45rem 0.75rem;
+        @include lg {
+            font-size: $textMedium;
+            padding: 0.75rem 1.5rem;
+        }
     }
     &.color-error {
         background-color: $error;
