@@ -55,7 +55,7 @@ const Header = () => {
         <header>
           <Container className='d-flex justify-content-between align-items-center'>
             <Link to="/" className={`d-flex align-items-center ${styles['logo-wrapper']}`}>
-              <img src={logo} alt='Logo of Indiana Public School, Attingal' />
+              <img src={`${logo}`} alt='Logo of Indiana Public School, Attingal' />
               <h2 className='ml-1'>
                 Indiana <span>Public School</span>
               </h2>
