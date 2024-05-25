@@ -3,9 +3,9 @@ import { MainLayout } from 'layout';
 import { Container } from 'components';
 import styles from './Vision.module.scss';
 
-const Vision = () => {
+const Vision = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   return (
-    <MainLayout>
+    <MainLayout handleHome={handleHome} handleAbout={handleAbout} handleVision={handleVision} handleMission={handleMission} handleGallery={handleGallery} handleContact={handleContact} >
       <div className={styles.wrapper}>
         <div className={styles.banner}>
           <h1>

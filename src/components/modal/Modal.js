@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Modal.module.scss';
 import { CloseIcon } from 'assets/icons';
 
-const Modal = ({ children, onClose, image }) => {
+const Modal = ({ children, onClose, image, className }) => {
   useEffect(() => {
     document.body.classList.add('no-scroll');
 
@@ -28,7 +28,7 @@ const Modal = ({ children, onClose, image }) => {
   };
 
   return (
-    <div className={`${styles.backdrop} ${image ? styles['has-image'] : ''}`} onClick={handleBackdropClick}>
+    <div className={`${styles.backdrop} ${className} ${image ? styles['has-image'] : ''}`} onClick={handleBackdropClick}>
       <div className={styles.content}>
         <button className={styles.close} onClick={onClose}>
           <CloseIcon/>

@@ -11,6 +11,7 @@ const AdmissionModal = ({ onClose }) => {
     class: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false); 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,12 +19,18 @@ const AdmissionModal = ({ onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Validate phone number length
     if (formData.phone.length < 10) {
       alert('Phone number must be at least 10 characters long.');
       return; // Prevent form submission
     }
+
+    // Update sending state and button label
+    setSending(true);
+    const submitButton = e.target.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
 
     console.log('Form submitted:', formData);
     const data = new FormData();
@@ -40,6 +47,7 @@ const AdmissionModal = ({ onClose }) => {
         muteHttpExceptions: true,
       });
 
+      // Reset the form and display submission success message
       setFormData({
         student: '',
         parent: '',
@@ -49,6 +57,12 @@ const AdmissionModal = ({ onClose }) => {
       setSubmitted(true);
     } catch (error) {
       console.log(error);
+      // Re-enable the submit button and revert its label
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send Now';
+    } finally {
+      // Reset sending state
+      setSending(false);
     }
   };
 
@@ -101,7 +115,7 @@ const AdmissionModal = ({ onClose }) => {
               ]}
             />
 
-            <Button type="submit" className="mt-2" color="primary" label="Send Now" />
+            <Button type="submit" className={`mt-2 ${sending && styles['loading-button']}`} color="primary" label={sending ? <>Sending... </> : "Send Now"} disabled={sending} />
           </form>
         </div>
       )}

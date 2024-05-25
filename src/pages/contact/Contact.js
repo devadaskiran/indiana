@@ -5,10 +5,10 @@ import { FacebookIcon, GmailIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from 
 import styles from './Contact.module.scss';
 
 
-const Contact = () => {
+const Contact = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   return (
-    <MainLayout>
-      {/* <div className={styles.wrapper}>
+    <MainLayout handleHome={handleHome} handleAbout={handleAbout} handleVision={handleVision} handleMission={handleMission} handleGallery={handleGallery} handleContact={handleContact} >
+      <div className={styles.wrapper}>
         <div className={styles.banner}>
           <h1>
             Contact Us
@@ -79,7 +79,7 @@ const Contact = () => {
             </ul>
           </div>
         </Container>
-      </div> */}
+      </div>
     </MainLayout>
   );
 };

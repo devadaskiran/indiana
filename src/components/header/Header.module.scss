@@ -74,8 +74,14 @@
           font-size: $textExtraLarge - 1.75px;
         }
         @include sm {
-          font-size: $textMedium;
-          margin-left: 5px;
+          font-size: $textExtraLarge - 8px;
+          margin-left: 10px;
+          & span {
+            font-family: $primaryFont;
+            font-size: $textSmall;
+            display: block;
+            font-weight: 300;
+          }
         }
         
       }

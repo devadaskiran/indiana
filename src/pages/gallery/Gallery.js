@@ -13,13 +13,13 @@ import styles from './Gallery.module.scss';
 import imgOne from 'assets/images/811A0163.jpeg';
 import imgTwo from 'assets/images/811A0508.jpeg';
 
-const Gallery = () => {
+const Gallery = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   const onInit = () => {
     console.log('lightGallery has been initialized');
   };
   return (
-    <MainLayout>
-      {/* <div className={styles.wrapper}>
+    <MainLayout handleHome={handleHome} handleAbout={handleAbout} handleVision={handleVision} handleMission={handleMission} handleGallery={handleGallery} handleContact={handleContact} >
+      <div className={styles.wrapper}>
         <div className={styles.banner}>
           <h1>
             Gallery
@@ -81,7 +81,7 @@ const Gallery = () => {
             </a>
           </LightGallery>
         </Container>
-      </div> */}
+      </div>
     </MainLayout>
   );
 };

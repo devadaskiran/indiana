@@ -3,10 +3,10 @@ import { MainLayout } from 'layout';
 import { Container } from 'components';
 import styles from './Mission.module.scss';
 
-const Mission = () => {
+const Mission = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   return (
-    <MainLayout>
-      {/* <div className={styles.wrapper}>
+    <MainLayout handleHome={handleHome} handleAbout={handleAbout} handleVision={handleVision} handleMission={handleMission} handleGallery={handleGallery} handleContact={handleContact} >
+      <div className={styles.wrapper}>
         <div className={styles.banner}>
           <h1>
             Mission
@@ -19,7 +19,7 @@ nation and to educate them through mental discipline and social experience to de
 intellectual, moral civic and create capacities to the fullest.
         </p>
       </Container>
-      </div> */}
+      </div>
     </MainLayout>
   );
 };

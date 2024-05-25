@@ -46,7 +46,7 @@ import aswathyju from 'assets/images/teachers/aswathyju.jpg';
 import unnimaya from 'assets/images/teachers/unnimayams.jpg';
 import swapnaraj from 'assets/images/teachers/Swapnaraj.jpg';
 
-import teacherImage from 'assets/images/teacher.jpeg';
+// import teacherImage from 'assets/images/teacher.jpeg';
 import teacherImageTwo from 'assets/images/teacher2.jpeg';
 import parentImage1 from 'assets/images/parentImage1.jpeg';
 import parentImage2 from 'assets/images/parentImage2.jpeg';

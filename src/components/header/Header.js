@@ -1,4 +1,3 @@
-// Header.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from 'assets/images/logo.png';
@@ -6,7 +5,7 @@ import { Button, Container, AdmissionModal } from 'components';
 import { CloseIcon, MenuIcon } from 'assets/icons';
 import styles from './Header.module.scss';
 
-const Header = () => {
+const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMission, handleVision}) => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -63,22 +62,24 @@ const Header = () => {
             <div className='d-flex align-items-center'>
               <ul className={`d-flex list-style-none gap-2 ${mobileMenu ? styles['mobile-menu'] : ''}`}>
                 <li>
-                  <Link to="/">Home</Link>
+                  {/* <Link to="/">Home</Link> */}
+                  <Link onClick={handleHome}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About Us</Link>
+                  {/* <Link to="/about">About Us</Link> */}
+                  <Link onClick={handleAbout}>About Us</Link>
                 </li>
                 <li>
-                  <Link>Vision</Link>
+                  <Link onClick={handleVision}>Vision</Link>
                 </li>
                 <li>
-                  <Link>Mission</Link>
+                  <Link onClick={handleMission}>Mission</Link>
                 </li>
                 <li>
-                  <Link>Gallery</Link>
+                  <Link onClick={handleGallery}>Gallery</Link>
                 </li>
                 <li>
-                  <Link>Contact Us</Link>
+                  <Link onClick={handleContact}>Contact Us</Link>
                 </li>
               </ul>
               <Button

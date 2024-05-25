@@ -35,4 +35,28 @@
       font-size: $textPrimary;
     }
   }
+  & :global(.button-global) {
+    &.loading-button {
+      position: relative;
+      overflow: hidden;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 10rem;
+        top: 0;
+        background: linear-gradient(90deg, rgba($bg, 0.25), rgba($bg, 0.01)); 
+        animation: moveRight 1s linear infinite; 
+      }
+    }
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
