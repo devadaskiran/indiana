@@ -1,70 +1,110 @@
 import React, { useState } from 'react';
-import { Modal } from 'components';
+import { Button, Modal, TextField } from 'components';
 import backgroundImage from 'assets/images/2151065226.jpg';
 import styles from './Admission.module.scss';
 
 const AdmissionModal = ({ onClose }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    contact: '',
-    class: '',
+    student: '',
+    parent: '',
+    phone: '',
+    class: ''
   });
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate phone number length
+    if (formData.phone.length < 10) {
+      alert('Phone number must be at least 10 characters long.');
+      return; // Prevent form submission
+    }
+
+    console.log('Form submitted:', formData);
+    const data = new FormData();
+    data.append('student', formData.student);
+    data.append('parent', formData.parent);
+    data.append('phone', formData.phone);
+    data.append('class', formData.class);
+
+    const Sheet_Url = "https://script.google.com/macros/s/AKfycbwPfJAHIiGw_YQRB-ctrkVcSbKkg0U04fjKPeSJwmC4LnirX-UaOQilJYtcNKeCgo8_-w/exec"
     try {
-      const response = await fetch('http://localhost:3000/submitForm', {
+      await fetch(Sheet_Url, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        body: data,
+        muteHttpExceptions: true,
       });
-      const data = await response.text();
-      console.log('Server response:', data);
+
       setFormData({
-        name: '',
-        contact: '',
-        class: '',
+        student: '',
+        parent: '',
+        phone: '',
+        class: ''
       });
-      onClose(); // Close the modal
+      setSubmitted(true);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.log(error);
     }
   };
-  
+
+  const handleApplyAgain = () => {
+    setSubmitted(false);
+  };
 
   return (
-    <Modal onClose={onClose} image={backgroundImage}>
-      {/* <h4>Apply for Admission</h4>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.formGroup}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
+    <Modal onClose={onClose} image={backgroundImage} className={styles.wrapper}>
+      {submitted ? (
+        <div>
+          <h3 className='mb-1'>
+            Thank you for your submission!
+          </h3>
+          <p>Your admission inquiry has been received successfully. We'll be in touch with you to discuss the next steps..</p>
+          <Button type="button" className="mt-2" onClick={handleApplyAgain} color="primary" label="Apply Again for Another Admission" />
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="contact">Email/Phone Number:</label>
-          <input type="text" id="contact" name="contact" value={formData.contact} onChange={handleInputChange} />
+      ) : (
+        <div>
+          <h3 className='mb-1'>
+            Admission Enquiry
+          </h3>
+          <form onSubmit={handleSubmit}>
+            <TextField label="Student's Name" type="text" name="student" value={formData.student} onChange={handleChange} required />
+            <TextField label="Parent's Name" type="text" name="parent" value={formData.parent} onChange={handleChange} required />
+            <TextField label="Phone Number" type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+            <TextField
+              label="Select class"
+              type="select"
+              name="class"
+              value={formData.class}
+              onChange={handleChange}
+              required
+              options={[
+                { value: 'prekg', label: 'Pre-KG' },
+                { value: 'lkg', label: 'LKG' },
+                { value: 'ukg', label: 'UKG' },
+                { value: 'one', label: 'First Std' },
+                { value: 'two', label: 'Second Std' },
+                { value: 'three', label: 'Third Std' },
+                { value: 'four', label: 'Fourth Std' },
+                { value: 'five', label: 'Fifth Std' },
+                { value: 'six', label: 'Sixth Std' },
+                { value: 'seven', label: 'Seventh Std' },
+                { value: 'eight', label: 'Eighth Std' },
+                { value: 'nine', label: 'Ninth Std' },
+                { value: 'ten', label: 'Tenth Std' },
+                { value: 'eleven', label: 'Eleventh Std' },
+                { value: 'twelve', label: 'Twelfth Std' },
+              ]}
+            />
+
+            <Button type="submit" className="mt-2" color="primary" label="Send Now" />
+          </form>
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="class">Select Class/Standard:</label>
-          <select id="class" name="class" value={formData.class} onChange={handleInputChange}>
-            <option value="">Select</option>
-            <option value="Class 1">Class 1</option>
-            <option value="Class 2">Class 2</option>
-            <option value="Class 3">Class 3</option>
-          </select>
-        </div>
-        <button type="submit">Submit</button>
-      </form> */}
+      )}
     </Modal>
   );
 };

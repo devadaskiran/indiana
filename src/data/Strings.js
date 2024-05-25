@@ -43,34 +43,11 @@ import akshays from 'assets/images/teachers/akshays.jpg';
 import aswathyeng from 'assets/images/teachers/aswathy-eng.jpg';
 import krishna from 'assets/images/teachers/Krishna.jpg';
 import aswathyju from 'assets/images/teachers/aswathyju.jpg';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import unnimaya from 'assets/images/teachers/unnimayams.jpg';
+import swapnaraj from 'assets/images/teachers/Swapnaraj.jpg';
 
 import teacherImage from 'assets/images/teacher.jpeg';
 import teacherImageTwo from 'assets/images/teacher2.jpeg';
-
 import parentImage1 from 'assets/images/parentImage1.jpeg';
 import parentImage2 from 'assets/images/parentImage2.jpeg';
 import schoolImage1 from 'assets/images/Q6A9028.jpeg';
@@ -79,12 +56,6 @@ import schoolImage3 from 'assets/images/IMG-20230824-WA0099.jpeg';
 import schoolImage8 from 'assets/images/IMG-20230920-WA0061.jpeg';
 import schoolImage9 from 'assets/images/IMG-20230920-WA0054.jpeg';
 import schoolImage10 from 'assets/images/IMG-20230915-WA0251.jpeg';
-
-
-
-
-
-
 
 const ABOUT_DATA = {
     title: "Indiana Public School:<br>Nurturing Excellence, Fostering Uniqueness",
@@ -129,7 +100,7 @@ export const CREW_DATA = [
     { id: 13, img: deepa, name: 'Ms. Deepa R S', designation: 'Dept. of Hindi', qualification: 'MA, B.Ed' },
     { id: 13, img: chithra, name: 'Ms. Chithra', designation: 'Dept. of Hindi', qualification: 'MA, B.Ed' },
     { id: 14, img: reena, name: 'Ms. Reena S N', designation: 'Dept. of Hindi', qualification: 'MA, B.Ed' },
-    { id: 15, img: teacherImage, name: 'Ms. Unnimaya', designation: 'Dept. of Hindi', qualification: 'MA, B.Ed' },
+    { id: 15, img: unnimaya, name: 'Ms. Unnimaya', designation: 'Dept. of Hindi', qualification: 'MA, B.Ed' },
     { id: 16, img: pratheeksha, name: 'Ms. Pratheeksha', designation: 'Dept. of Science', qualification: 'MSc, B.Ed' },
     { id: 17, img: simisdev, name: 'Ms. Simi S Dev', designation: 'Dept. of Science', qualification: 'MSc, B.Ed' },
     { id: 18, img: veena, name: 'Ms. Veena V', designation: 'Dept. of Science', qualification: 'BSc, B.Ed' },
@@ -142,7 +113,7 @@ export const CREW_DATA = [
     { id: 24, img: dhanyaks, name: 'Ms. Dhanya K S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
     { id: 25, img: sukshma, name: 'Ms. Sukshma Suseelan', designation: 'Dept. of Mathematics', qualification: 'BSc, B.Ed' },
     { id: 26, img: navya, name: 'Ms. Navya S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
-    { id: 27, img: teacherImage, name: 'Ms. Swapna Raj S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
+    { id: 27, img: swapnaraj, name: 'Ms. Swapna Raj S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
     { id: 28, img: sinims, name: 'Ms. Sini M S', designation: 'Dept. of IT', qualification: 'BSc, B.Ed, PGDCA, MCA' },
     { id: 29, img: roshni, name: 'Ms. Roshni B', designation: 'Dept. of IT', qualification: 'BSc, DCE, PGDCA' },
     { id: 30, img: binzy, name: 'Ms. Binzy B S', designation: 'Dept. of IT', qualification: 'B.Tech Computer Science' },

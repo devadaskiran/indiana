@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-const Button = ({ className, label, variant, size, color, onClick }) => {
+const Button = ({ className,type, label, variant, size, color, onClick }) => {
   const classNames = [
     className,
     styles.wrapper,
@@ -20,7 +20,7 @@ const Button = ({ className, label, variant, size, color, onClick }) => {
   const filteredClassNames = classNames.filter(Boolean).join(' ');
 
   return (
-    <button className={filteredClassNames} onClick={onClick}>
+    <button type={type} className={filteredClassNames} onClick={onClick}>
       {label}
     </button>
   );

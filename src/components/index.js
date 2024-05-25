@@ -14,6 +14,7 @@ export { default as StarRating } from './star-rating';
 export { default as IndKids } from './ind-kids';
 export { default as Modal } from './modal';
 export { default as AdmissionModal } from './admission-modal';
+export { default as TextField } from './text-field';
 
 
 

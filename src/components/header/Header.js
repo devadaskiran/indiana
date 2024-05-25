@@ -78,10 +78,15 @@ const Header = () => {
                   <Link>Gallery</Link>
                 </li>
                 <li>
-                  <Link>Contact Us</Link> 
+                  <Link>Contact Us</Link>
                 </li>
               </ul>
-              <Button onClick={toggleModal} className="ml-2" label="Apply for Admission" color="primary" />
+              <Button
+                onClick={toggleModal}
+                className="ml-2"
+                label={<>Admission <span>for admission</span></>}
+                color="primary"
+              />
               <div className={`${styles['menu-icon']} ${mobileMenu ? styles['close-icon-active'] : ''}`} onClick={toggleMobileMenu}>
                 {mobileMenu ? <CloseIcon /> : <MenuIcon />}
               </div>
