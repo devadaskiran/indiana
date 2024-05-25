@@ -9,7 +9,6 @@ import pratheeksha from 'assets/images/teachers/pratheeksha.jpg';
 import samdeep from 'assets/images/teachers/Samdeep.jpg';
 import navya from 'assets/images/teachers/Navya.jpg';
 import sukshma from 'assets/images/teachers/Sukshma.jpg';
-import raji from 'assets/images/teachers/Rajig.jpg';
 import simisdev from 'assets/images/teachers/Simisdev.jpg';
 import manjuvg from 'assets/images/teachers/Manju.jpg';
 import athira from 'assets/images/teachers/athira.jpg';
@@ -45,6 +44,8 @@ import krishna from 'assets/images/teachers/Krishna.jpg';
 import aswathyju from 'assets/images/teachers/aswathyju.jpg';
 import unnimaya from 'assets/images/teachers/unnimayams.jpg';
 import swapnaraj from 'assets/images/teachers/Swapnaraj.jpg';
+import aryass from 'assets/images/teachers/Aryass.jpg';
+import aryakg from 'assets/images/teachers/Aryakgteacher.jpg';
 
 // import teacherImage from 'assets/images/teacher.jpeg';
 import teacherImageTwo from 'assets/images/teacher2.jpeg';
@@ -105,10 +106,10 @@ export const CREW_DATA = [
     { id: 17, img: simisdev, name: 'Ms. Simi S Dev', designation: 'Dept. of Science', qualification: 'MSc, B.Ed' },
     { id: 18, img: veena, name: 'Ms. Veena V', designation: 'Dept. of Science', qualification: 'BSc, B.Ed' },
     { id: 19, img: kukku, name: 'Ms. Kukku', designation: 'Dept. of Science', qualification: 'BSc, B.Ed' },
-    { id: 19, img: raji, name: 'Ms. Raji G', designation: 'Dept. of Science', qualification: 'BSc, B.Ed' },
     { id: 20, img: girija, name: 'Ms. Girija', designation: 'Dept. of Social Science', qualification: 'MA, B.Ed' },
     { id: 21, img: samdeep, name: 'Mr. Samdeep B S', designation: 'Dept. of Social Science', qualification: 'MA, B.Ed' },
     { id: 22, img: aswathyju, name: 'Ms. Aswathy J U', designation: 'Dept. of Social Science', qualification: 'MA, B.Ed' },
+    { id: 221, img: aryass, name: 'Ms. Arya S S', designation: 'Dept. of Social Science', qualification: 'MA, B.Ed' },
     { id: 23, img: maneesha, name: 'Ms. Maneeksha T S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
     { id: 24, img: dhanyaks, name: 'Ms. Dhanya K S', designation: 'Dept. of Mathematics', qualification: 'MSc, B.Ed' },
     { id: 25, img: sukshma, name: 'Ms. Sukshma Suseelan', designation: 'Dept. of Mathematics', qualification: 'BSc, B.Ed' },
@@ -119,20 +120,21 @@ export const CREW_DATA = [
     { id: 30, img: binzy, name: 'Ms. Binzy B S', designation: 'Dept. of IT', qualification: 'B.Tech Computer Science' },
     { id: 31, img: teacherImageTwo, name: 'Mr. Anush T', designation: 'Physical Education', qualification: 'B.PEd' },
     { id: 32, img: teacherImageTwo, name: 'Mr. Paul Raj', designation: 'Physical Education', qualification: 'B.PEd' },
-    { id: 33, img: anithas, name: 'Ms. Anitha S', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 34, img: thasnim, name: 'Ms. Thasnim', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 35, img: praseeja, name: 'Ms. Praseeja Panickar', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 36, img: aswathyss, name: 'Ms. Aswathy S S', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 37, img: summayya, name: 'Ms. Sumayya', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 38, img: krishna, name: 'Ms. Krishna', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 39, img: anni, name: 'Ms. Annie', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 40, img: jiny, name: 'Ms. Jiny', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 41, img: sindhu, name: 'Ms. Sindhu', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 42, img: athira, name: 'Ms. Athira', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 43, img: anamika, name: 'Ms. Anamika', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 46, img: soumya, name: 'Ms. Soumya', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 44, img: sruthi, name: 'Ms. Sruthi', designation: 'Kindergarten', qualification: 'Qualification' },
-    { id: 45, img: teena, name: 'Ms. Teena', designation: 'Kindergarten', qualification: 'Qualification' },
+    { id: 33, img: anithas, name: 'Ms. Anitha S', designation: 'Kindergarten', qualification: 'MA, MTTC' },
+    { id: 34, img: thasnim, name: 'Ms. Thasnim', designation: 'Kindergarten', qualification: 'M Com, PPTTC' },
+    { id: 35, img: praseeja, name: 'Ms. Praseeja Panickar', designation: 'Kindergarten', qualification: 'BA, ECEd' },
+    { id: 36, img: aswathyss, name: 'Ms. Aswathy S S', designation: 'Kindergarten', qualification: 'BA, MTTC' },
+    { id: 37, img: summayya, name: 'Ms. Sumayya', designation: 'Kindergarten', qualification: 'BA, MTTC' },
+    { id: 38, img: krishna, name: 'Ms. Krishna', designation: 'Kindergarten', qualification: 'MTTC' },
+    { id: 39, img: anni, name: 'Ms. Annie', designation: 'Kindergarten', qualification: 'B Sc, MTTC' },
+    { id: 40, img: jiny, name: 'Ms. Jiny', designation: 'Kindergarten', qualification: 'MTTC' },
+    { id: 41, img: sindhu, name: 'Ms. Sindhu', designation: 'Kindergarten', qualification: 'PPTTC' },
+    { id: 42, img: athira, name: 'Ms. Athira', designation: 'Kindergarten', qualification: 'PPTTC' },
+    { id: 43, img: anamika, name: 'Ms. Anamika', designation: 'Kindergarten', qualification: 'BA, MTTC' },
+    { id: 46, img: soumya, name: 'Ms. Soumya', designation: 'Kindergarten', qualification: 'PPTTC' },
+    { id: 44, img: sruthi, name: 'Ms. Sruthi', designation: 'Kindergarten', qualification: 'MPTTC' },
+    { id: 45, img: teena, name: 'Ms. Teena', designation: 'Kindergarten', qualification: 'B Com, MTTC' },
+    { id: 46, img: aryakg, name: 'Ms. Arya', designation: 'Kindergarten', qualification: 'MTTC' },
 ];
 
 export const CREW_DATA_TITLE = ["Meet the crew"];

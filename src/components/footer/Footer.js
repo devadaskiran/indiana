@@ -68,12 +68,12 @@ const Footer = () => {
           <li className="d-flex align-items-center">
             <WhatsAppIcon/>
             <a href="https://wa.me/+9188611308723">
-              88611308723
+              8861308723
             </a>
           </li>
           <li className="d-flex align-items-center">
             <GmailIcon/>
-            <a href="https://wa.me/+9188611308723">
+            <a href="mailto:indianapublicschool@gmail.com">
               indianapublicschool@gmail.com
             </a>
           </li>

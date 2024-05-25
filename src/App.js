@@ -1,33 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 import { Landing, AboutUs, Vision, Mission, Gallery, Contact, NotFound } from './pages';
 import '../src/index.scss';
 
 function App() {
+
   const [activeComponent, setActiveComponent] = useState('Landing');
+
+  useEffect(() => {
+    const capitalize = (str) => {
+      return str.replace(/\b\w/g, (char) => char.toUpperCase());
+    };
+    let title = activeComponent === 'Landing' ? 'Homepage' : capitalize(activeComponent.replace(/([a-z])([A-Z])/g, '$1 $2'));
+    document.title = `Indiana Public School - ${title}`;
+  }, [activeComponent]);
 
   const handleHome = () => {
     setActiveComponent('Landing');
+    window.scrollTo(0, 0);
   };
 
   const handleAbout = () => {
     setActiveComponent('AboutUs');
+    window.scrollTo(0, 0);
   };
 
   const handleVision = () => {
     setActiveComponent('Vision');
+    window.scrollTo(0, 0);
   };
 
   const handleMission = () => {
     setActiveComponent('Mission');
+    window.scrollTo(0, 0);
   };
 
   const handleGallery = () => {
     setActiveComponent('Gallery');
+    window.scrollTo(0, 0);
   };
 
   const handleContact = () => {
     setActiveComponent('Contact');
+    window.scrollTo(0, 0);
   };
 
   const renderComponent = () => {
