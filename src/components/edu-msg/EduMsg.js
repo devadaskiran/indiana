@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Avatar, Container } from 'components';
-import aboutImage from 'assets/images/school-imag3.jpeg';
-import signature from 'assets/images/signature.png';
-import chairman from 'assets/images/chairman_img.png';
+import aboutImage from '@assets/images/school-imag3.jpeg';
+import signature from '@assets/images/signature.png';
+import chairman from '@assets/images/chairman_img.png';
 import styles from './EduMsg.module.scss';
 import { CREW_DATA } from 'data/Strings';
 
