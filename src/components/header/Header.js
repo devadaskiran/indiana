@@ -62,24 +62,22 @@ const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMi
             <div className='d-flex align-items-center'>
               <ul className={`d-flex list-style-none gap-2 ${mobileMenu ? styles['mobile-menu'] : ''}`}>
                 <li>
-                  {/* <Link to="/">Home</Link> */}
-                  <Link onClick={handleHome}>Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  {/* <Link to="/about">About Us</Link> */}
-                  <Link onClick={handleAbout}>About Us</Link>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link onClick={handleVision}>Vision</Link>
+                  <Link to="/vision">Vision</Link>
                 </li>
                 <li>
-                  <Link onClick={handleMission}>Mission</Link>
+                  <Link to="/mission">Mission</Link>
                 </li>
                 <li>
-                  <Link onClick={handleGallery}>Gallery</Link>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
                 <li>
-                  <Link onClick={handleContact}>Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
               <Button
