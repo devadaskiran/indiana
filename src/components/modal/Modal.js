@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './Modal.module.scss';
-import { CloseIcon } from 'assets/icons';
+import { CloseIcon } from '@assets/icons';
 
 const Modal = ({ children, onClose, image, className }) => {
   useEffect(() => {

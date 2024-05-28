@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import logo from 'assets/images/logo.png';
-import video from 'assets/videos/Swing_Kid_Playground.mp4';
+import logo from '@assets/images/logo.png';
+import video from '@assets/videos/Swing_Kid_Playground.mp4';
 import { Container } from 'components';
 import styles from './IndKids.module.scss';
 

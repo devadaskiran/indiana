@@ -10,8 +10,8 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom'
 import { Container } from 'components';
 import styles from './Gallery.module.scss';
-import imgOne from 'assets/images/811A0163.jpeg';
-import imgTwo from 'assets/images/811A0508.jpeg';
+import imgOne from '@assets/images/811A0163.jpeg';
+import imgTwo from '@assets/images/811A0508.jpeg';
 
 const Gallery = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   const onInit = () => {

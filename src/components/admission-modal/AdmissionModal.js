@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, TextField } from 'components';
-import backgroundImage from 'assets/images/2151065226.jpg';
+import backgroundImage from '@assets/images/2151065226.jpg';
 import styles from './Admission.module.scss';
 
 const AdmissionModal = ({ onClose }) => {

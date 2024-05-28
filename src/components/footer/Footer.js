@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../container';
-import { CopyrightIcon, FacebookIcon, GmailIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from 'assets/icons';
+import { CopyrightIcon, FacebookIcon, GmailIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from '@assets/icons';
 import styles from './Footer.module.scss';
 
 

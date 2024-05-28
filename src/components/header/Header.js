@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from 'assets/images/logo.png';
+import logo from '@assets/images/logo.png';
 import { Button, Container, AdmissionModal } from 'components';
-import { CloseIcon, MenuIcon } from 'assets/icons';
+import { CloseIcon, MenuIcon } from '@assets/icons';
 import styles from './Header.module.scss';
 
 const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMission, handleVision}) => {
