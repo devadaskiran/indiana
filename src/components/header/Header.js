@@ -85,7 +85,7 @@ const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMi
               <Button
                 onClick={toggleModal}
                 className="ml-2"
-                label={<>Admission <span>for admission</span></>}
+                label={<>Apply <span>for admission</span></>}
                 color="primary"
               />
               <div className={`${styles['menu-icon']} ${mobileMenu ? styles['close-icon-active'] : ''}`} onClick={toggleMobileMenu}>
