@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Landing, AboutUs, Vision, Mission, Gallery, Contact, NotFound, SingularAttingal, BestEnglishSchoolAttingal } from './pages';
+import { Landing, AboutUs, Gallery, Contact, NotFound, SingularAttingal, BestEnglishSchoolAttingal, VisionMission } from './pages';
 import '../src/index.scss';
+import Blogs from 'pages/blogs';
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
     <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/vision" element={<Vision />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/mission" element={<Mission />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/vision-mission" element={<VisionMission />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/top-school-in-attingal" element={<SingularAttingal />} />

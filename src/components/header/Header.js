@@ -70,10 +70,10 @@ const Header = () => {
                   <Link to="/about">About Us</Link>
                 </li>
                 <li onClick={handleClick}>
-                  <Link to="/vision">Vision</Link>
+                  <Link to="/blogs">Blogs</Link>
                 </li>
                 <li onClick={handleClick}>
-                  <Link to="/mission">Mission</Link>
+                  <Link to="/vision-mission">Vision & Mission</Link>
                 </li>
                 <li onClick={handleClick}>
                   <Link to="/gallery">Gallery</Link>

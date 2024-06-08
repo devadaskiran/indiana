@@ -23,7 +23,7 @@ const Landing = ({handleHome, handleAbout, handleVision, handleMission, handleGa
         <meta name="twitter:description" content="Best English School in Attingal - Welcome to Indiana Public School, the Best and Top School in Attingal, where innovation meets nature in a harmonious blend for holistic education." />
         <meta name="twitter:image" content="https://www.indianaschool.in/static/media/IMG-20230915-WA0251.9f1e7528668f964ee2b0.jpeg" />
         <meta name="keywords" content="Indiana Public School, Attingal, best school, top school, holistic education, innovation, nature, excellence" />
-        <title>Best English School in Attingal - Welcome to Indiana Public School</title>
+        <title>Top School in Attingal and Best School in Attingal - Welcome to Indiana Public School</title>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "http://schema.org",
@@ -31,7 +31,7 @@ const Landing = ({handleHome, handleAbout, handleVision, handleMission, handleGa
             "name": "Indiana Public School",
             "url": "http://www.indianaschool.in",
             "logo": "http://www.indianaschool.in/static/media/school-imag3.64dc1142e2177bc05823.jpeg",
-            "description": "Best English School in Attingal - Welcome to Indiana Public School, the Best and Top School in Attingal, where innovation meets nature in a harmonious blend for holistic education.",
+            "description": "Top School in Attingal and Best School in Attingal - Welcome to Indiana Public School, where innovation meets nature in a harmonious blend for holistic education. Our purpose-built, green campus nurtures young minds, offering spacious, multimedia-equipped classrooms flooded with natural light. Embracing inquiry-based learning from Pre KG onwards, we foster deep understanding through engaging projects and real-world activities. Our virtual learning platform ensures comprehensive education from Pre KG to all Grades.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Toll Junction, opposite KSEB 110KV substation, Avanavanchery",
