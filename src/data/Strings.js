@@ -72,12 +72,14 @@ const ABOUT_DATA = {
             title: "Exclusive English Medium",
             description: "As the sole complete English school in Attingal, we prioritize effective communication and language proficiency, preparing students for global challenges.",
             icon: <MortarBoardIcon />,
+            pageLink: '/best-english-school-in-attingal'
         },
         {
             id: 3,
-            title: "Singular in Attingal",
+            title: "Top School in Attingal",
             description: "Indiana Public School stands as the only complete English school in Attingal, providing a unique and inclusive educational environment for the local community.",
             icon: <MortarBoardIcon />,
+            pageLink: '/top-school-in-attingal'
         },
 
     ],

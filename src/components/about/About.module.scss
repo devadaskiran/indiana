@@ -134,6 +134,12 @@ $cards-per-row: 4;
       background-color: transparent;
       border-color: rgba($bg, 0.175);
       margin-top: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & span {
+        display: none;
+      }
       @include sm {
         margin-top: 0.75rem;
       }
@@ -146,6 +152,12 @@ $cards-per-row: 4;
 
       &:hover {
         background-color: $secondary;
+        width: 5.75rem;
+        & span {
+          display: block;
+          margin-right: 0.25rem;
+          text-decoration: none;
+        }
       }
     }
 
@@ -165,6 +177,9 @@ $cards-per-row: 4;
     }
     &:nth-child(#{$cards-per-row}n) {
       margin-right: 0;
+    }
+    & a {
+      text-decoration: none;
     }
   }
   & :global(.container-global) {

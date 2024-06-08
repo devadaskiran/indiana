@@ -1,13 +1,15 @@
 import React from 'react';
-
-
 import { Container, Card, Button } from 'components';
 import { RightArrowIcon } from '@assets/icons';
+import { Link } from 'react-router-dom';
 import ABOUT_DATA from 'data/Strings';
 import styles from './About.module.scss';
 
 const About = () => {
   const { cards } = ABOUT_DATA;
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -29,7 +31,9 @@ const About = () => {
               <p>
                 {card.description}
               </p>
-              <Button label={<RightArrowIcon />} variant="rounded-outlined" className={styles['arrow-button']} />
+              <Link to={card.pageLink}>
+                <Button onClick={handleClick} label={<><span>Read</span><RightArrowIcon /></>} variant="rounded-outlined" className={styles['arrow-button']} />
+              </Link>
             </Card>
           ))}
         </div>

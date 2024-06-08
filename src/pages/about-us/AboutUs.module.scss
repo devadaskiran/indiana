@@ -25,7 +25,10 @@
     }
  }
  & :global(.container-global) {
-  padding: 5rem 0;
+    padding: 5rem 0;
+  @include md {
+    padding: 5rem 1rem;
+  }
  }
  & p {
   color: $textDark;

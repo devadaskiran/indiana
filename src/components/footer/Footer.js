@@ -67,7 +67,7 @@ const Footer = () => {
           </li>
           <li className="d-flex align-items-center">
             <WhatsAppIcon/>
-            <a href="https://wa.me/+9188611308723">
+            <a href="https://wa.me/+918861308723">
               8861308723
             </a>
           </li>

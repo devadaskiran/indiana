@@ -5,7 +5,7 @@ import { Button, Container, AdmissionModal } from 'components';
 import { CloseIcon, MenuIcon } from '@assets/icons';
 import styles from './Header.module.scss';
 
-const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMission, handleVision}) => {
+const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -39,7 +39,9 @@ const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMi
   const toggleModal = () => {
     setShowModal(prevModal => !prevModal);
   };
-
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
       <div className={`${styles.wrapper} ${isScrolled ? styles.fixed : ''}`}>
@@ -61,29 +63,29 @@ const Header = ({handleAbout, handleHome, handleContact, handleGallery, handleMi
             </Link>
             <div className='d-flex align-items-center'>
               <ul className={`d-flex list-style-none gap-2 ${mobileMenu ? styles['mobile-menu'] : ''}`}>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/about">About Us</Link>
                 </li>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/vision">Vision</Link>
                 </li>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/mission">Mission</Link>
                 </li>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/gallery">Gallery</Link>
                 </li>
-                <li>
+                <li onClick={handleClick}>
                   <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
               <Button
                 onClick={toggleModal}
                 className="ml-2"
-                label={<>Apply <span>for admission</span></>}
+                label={<><span>Apply for</span> Admission</>}
                 color="primary"
               />
               <div className={`${styles['menu-icon']} ${mobileMenu ? styles['close-icon-active'] : ''}`} onClick={toggleMobileMenu}>
