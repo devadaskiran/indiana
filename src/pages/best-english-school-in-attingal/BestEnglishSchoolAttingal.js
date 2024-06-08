@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainLayout } from 'layout';
 import { Container } from 'components';
-import schoolImg from 'assets/images/top-english-school-in-attingal.jpg';
+import schoolImg from '/images/top-english-school-in-attingal.jpg';
 import { Breadcrumb } from 'components';
 import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';

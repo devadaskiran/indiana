@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { MainLayout } from 'layout';
 import LightGallery from 'lightgallery/react';
 import 'lightgallery/css/lightgallery.css';
@@ -10,8 +11,6 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom'
 import { Container } from 'components';
 import styles from './Gallery.module.scss';
-import imgOne from '@assets/images/811A0163.jpeg';
-import imgTwo from '@assets/images/811A0508.jpeg';
 
 const Gallery = ({handleHome, handleAbout, handleVision, handleMission, handleGallery, handleContact}) => {
   const onInit = () => {
@@ -31,53 +30,53 @@ const Gallery = ({handleHome, handleAbout, handleVision, handleMission, handleGa
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
-            <a href={imgOne}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgOne} />
+            <a href='/images/811A0163.jpeg'>
+              <Image src='/images/811A0163.jpeg' alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants."/>
             </a>
-            <a href={imgTwo}>
-              <img alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src={imgTwo} />
+            <a href='/images/811A0508.jpeg'>
+              <Image alt="INDFEST 2024 was a dynamic celebration of our nation's cultural tapestry, showcasing diverse talents and fostering unity among participants." src='/images/811A0508.jpeg'/>
             </a>
           </LightGallery>
         </Container>

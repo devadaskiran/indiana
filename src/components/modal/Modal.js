@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './Modal.module.scss';
-import { CloseIcon } from '@assets/icons';
+import { CloseIcon } from 'assets/icons';
 
 const Modal = ({ children, onClose, image, className }) => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const Modal = ({ children, onClose, image, className }) => {
           <CloseIcon/>
         </button>
         {image &&
-          <div className={styles['img-wrapper']} style={{ backgroundImage: `url(${image})` }} />
+          <Image src={image} alt='Logo of Indiana Public School, Attingal'/>
         }
         <div className={styles['form-wrapper']}>
           {children}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainLayout } from 'layout';
 import { Container } from 'components';
-import { FacebookIcon, GmailIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from '@assets/icons';
+import { FacebookIcon, GmailIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from 'assets/icons';
 import styles from './Contact.module.scss';
 
 

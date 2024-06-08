@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card, Button } from 'components';
-import { RightArrowIcon } from '@assets/icons';
+import { RightArrowIcon } from 'assets/icons';
 import { Link } from 'react-router-dom';
 import ABOUT_DATA from 'data/Strings';
 import styles from './About.module.scss';

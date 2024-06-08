@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import logo from '@assets/images/logo.png';
-import video from '@assets/videos/Swing_Kid_Playground.mp4';
-import { Container } from 'components';
 import styles from './IndKids.module.scss';
+import videoSrc from '../../../public/videos/Swing_Kid_Playground.mp4';
+import Container from 'components/container';
 
 const EduMsg = () => {
   const videoRef = useRef(null);
@@ -19,9 +18,9 @@ const EduMsg = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles['inner-wrapper']}>
-        <Container className="d-flex align-items-center">
+      <Container className="d-flex align-items-center">
           <div className={styles['logo-container']}>
-            <img src={logo} alt='Logo of Indiana Public School, Attingal' />
+            <Image src="/images/logo.png" alt='Logo of Indiana Public School, Attingal'/>
             <h1>
               INDKIDS
             </h1>
@@ -66,7 +65,7 @@ const EduMsg = () => {
         </Container>
       </div>
       <video ref={videoRef} height="100%" width="100%" autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
     </div>
   );

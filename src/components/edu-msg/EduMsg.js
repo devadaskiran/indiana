@@ -1,9 +1,6 @@
 import React from 'react';
-
+import Image from 'next/image';
 import { Avatar, Container } from 'components';
-import aboutImage from '@assets/images/school-imag3.jpeg';
-import signature from '@assets/images/signature.png';
-import chairman from '@assets/images/chairman_img.png';
 import styles from './EduMsg.module.scss';
 import { CREW_DATA } from 'data/Strings';
 
@@ -17,8 +14,7 @@ const EduMsg = () => {
     <div className={styles.wrapper}>
       <Container className="d-flex flex-column gap-4">
         <div className={styles['image-wrapper']}>
-          <img src={aboutImage} alt='Indiana Public School, Attingal, Trivandrum.'  />
-          {/* <RubberSRedefining Educationeal className={styles.seal} text="Indiana Public School, Attingal, Trivandrum."/>  */}
+          <Image src="/images/school-imag3.jpeg" alt="Indiana Public School, Attingal, Trivandrum." width={500} height={300} />
         </div>
         <div className={`d-flex pb-2 ${styles['text-wrapper']}`}>
           <h2 className='mb-1'>
@@ -29,10 +25,10 @@ const EduMsg = () => {
           </p>
           <div className={`d-flex ${styles['avatar-sign-wrapper']}`}>
             <div className='d-flex'>
-              <img src={chairman} alt='Chairman of Indiana Public School' className={styles['avatar-image']}/>
+              <Image src="/images/chairman_img.png" alt="Chairman of Indiana Public School" width={150} height={150} className={styles['avatar-image']} />
               <Avatar photo={firstPersonData.img} fullName={firstPersonData.name} designation={firstPersonData.designation} />
             </div>
-            <img src={signature} className={styles.sign} alt='Signature of Sudharshanan'/>
+            <Image src="/images/signature.png" className={styles.sign} alt="Signature of Sudharshanan" width={150} height={50} />
           </div>
         </div>
       </Container>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '@assets/images/logo.png';
+import Link from 'next/link';
+import Image from 'next/image';
 import { Button, Container, AdmissionModal } from 'components';
-import { CloseIcon, MenuIcon } from '@assets/icons';
+import { CloseIcon, MenuIcon } from 'assets/icons';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -56,7 +56,7 @@ const Header = () => {
         <header>
           <Container className='d-flex justify-content-between align-items-center'>
             <Link to="/" className={`d-flex align-items-center ${styles['logo-wrapper']}`}>
-              <img src={`${logo}`} alt='Logo of Indiana Public School, Attingal' />
+              <Image src="/images/logo.png" alt='Logo of Indiana Public School, Attingal'/>
               <h2 className='ml-1'>
                 Indiana <span>Public School</span>
               </h2>
