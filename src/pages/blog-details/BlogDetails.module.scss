@@ -1,0 +1,44 @@
+@import "assets/scss/variables.scss";
+
+.wrapper {
+  color: $textDark;
+  margin: 2.5rem 0;
+  & img {
+    width: 100%;
+    margin: 2.5rem 0;
+    border-radius: 1rem;
+  }
+  & header {
+    & h1 {
+      @include md {
+        font-size: $textLarge;
+      }
+    }
+  }
+  & main {
+    & article { 
+      & p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  & :global(.container-global) {
+    @include md {
+      padding: 0 1rem;
+    }
+  }
+  & .category {
+    display: inline-flex;
+    padding: 0 0.5rem;
+    color: $primary;
+    background-color: rgba($primary, 0.15);
+    transition: all ease-in-out 0.5s;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+  }
+  & .date {
+    color: rgba($textDark, 0.85);
+    margin: 0.25rem 0 1rem;
+    transition: all ease-in-out 0.5s;
+  }
+}

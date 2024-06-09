@@ -5,7 +5,7 @@ const Avatar = ({ fullName, designation, photo }) => {
   const firstLetter = fullName ? fullName.charAt(0).toUpperCase() : '';
 
   return (
-    <div className={`d-flex align-items-center ${styles.wrapper}`}>
+    <div className={`d-flex align-items-center avatar-global  ${styles.wrapper}`}>
       <div className={`d-flex align-items-center justify-content-center avatar-photo-global ${styles.photo}`}>
         {photo ? (
           <img src={photo} alt={`Avatar of ${fullName}`} />

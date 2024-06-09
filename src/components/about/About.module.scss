@@ -128,49 +128,7 @@ $cards-per-row: 4;
       }
     }
 
-    & .arrow-button {
-      width: 3.75rem;
-      height: 2.75rem;
-      background-color: transparent;
-      border-color: rgba($bg, 0.175);
-      margin-top: 1.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      & span {
-        display: none;
-      }
-      @include sm {
-        margin-top: 0.75rem;
-      }
-      & svg {
-        height: 1rem;
-        width: 1rem;
-        opacity: 0.5;
-        transition: ease-in-out 0.5s all;
-      }
-
-      &:hover {
-        background-color: $secondary;
-        width: 5.75rem;
-        & span {
-          display: block;
-          margin-right: 0.25rem;
-          text-decoration: none;
-        }
-      }
-    }
-
     &:hover {
-      & .arrow-button {
-        border-color: rgba($bg, 0.5);
-
-        & svg {
-          opacity: 0.85;
-          transform: translateX(5px);
-        }
-      }
-
       & h3 {
         opacity: 0.115;
       }

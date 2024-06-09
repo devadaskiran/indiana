@@ -16,6 +16,7 @@ export { default as Modal } from './modal';
 export { default as AdmissionModal } from './admission-modal';
 export { default as TextField } from './text-field';
 export { default as Breadcrumb } from './breadcrumb';
+export { default as BlogCard } from './blog-card';
 
 
 

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Landing, AboutUs, Gallery, Contact, NotFound, SingularAttingal, BestEnglishSchoolAttingal, VisionMission } from './pages';
+import { Landing, AboutUs, Gallery, Contact, NotFound, SingularAttingal, BestEnglishSchoolAttingal, VisionMission, BlogDetails, Blogs } from './pages';
 import '../src/index.scss';
-import Blogs from 'pages/blogs';
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<BlogDetails />} />
         <Route path="/vision-mission" element={<VisionMission />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/not-found" element={<NotFound />} />

@@ -13,4 +13,15 @@
   & .breadcrumb-separator {
     margin: 0 0.25rem;
   }
+  & li {
+    display: flex;
+    align-items: center;
+  }
+  & .current-page {
+    white-space: nowrap;
+    max-width: calc(100vw - 15rem);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 100%;
+  }
 }

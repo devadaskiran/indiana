@@ -10,11 +10,11 @@ const Breadcrumb = ({ paths }) => {
           <li className={styles['breadcrumb-item']} key={index}>
             {index > 0 && <span className={styles['breadcrumb-separator']}>&gt;</span>}
             {index === paths.length - 1 ? (
-              <span aria-current="page">
+              <span aria-current="page" className={styles['current-page']} title={path.title}>
                 {path.title}
               </span>
             ) : (
-              <Link to={path.url}>
+              <Link to={path.url} title={path.title}>
                 {path.title}
               </Link>
             )}

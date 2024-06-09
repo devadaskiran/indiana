@@ -212,3 +212,23 @@ export const BANNER_DATA = [
         image: schoolImage10,
     },
 ];
+
+export const BLOG_POST = [
+    {
+      category: 'education',
+      title: 'How to Learn React',
+      date: 'June 1, 2024',
+      author: [false, 'Kiran Devadas', 'Admin'],
+      description: 'This is a detailed description about how to learn React...',
+      image: teacherImageTwo
+    },
+    {
+      category: 'technology',
+      title: 'The Future of AI',
+      date: 'June 2, 2024',
+      author: [true, 'Alex Johnson', 'Tech Writer'],
+      description: 'This is a detailed description about the future of AI...',
+      image: teacherImageTwo
+    },
+    // Add more blog posts here
+  ];

@@ -32,7 +32,7 @@ const About = () => {
                 {card.description}
               </p>
               <Link to={card.pageLink}>
-                <Button onClick={handleClick} label={<><span>Read</span><RightArrowIcon /></>} variant="rounded-outlined" className={styles['arrow-button']} />
+                <Button onClick={handleClick} label={<><span>Read</span><RightArrowIcon /></>} variant="rounded-outlined" className='arrow-button' />
               </Link>
             </Card>
           ))}

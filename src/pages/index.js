@@ -7,6 +7,8 @@ export { default as Contact } from './contact';
 export { default as SingularAttingal } from './singular-in-attingal';
 export { default as BestEnglishSchoolAttingal } from './best-english-school-in-attingal';
 export { default as Blogs } from './blogs';
+export { default as BlogDetails } from './blog-details';
+
 
 
 
