@@ -134,7 +134,7 @@ export const CREW_DATA = [
     { id: 42, img: athira, name: 'Ms. Athira', designation: 'Kindergarten', qualification: 'PPTTC' },
     { id: 43, img: anamika, name: 'Ms. Anamika', designation: 'Kindergarten', qualification: 'BA, MTTC' },
     { id: 46, img: soumya, name: 'Ms. Soumya', designation: 'Kindergarten', qualification: 'PPTTC' },
-    { id: 44, img: sruthi, name: 'Ms. Sruthi', designation: 'Kindergarten', qualification: 'MPTTC' },
+    // { id: 44, img: sruthi, name: 'Ms. Sruthi', designation: 'Kindergarten', qualification: 'MPTTC' },
     { id: 45, img: teena, name: 'Ms. Teena', designation: 'Kindergarten', qualification: 'B Com, MTTC' },
     { id: 46, img: aryakg, name: 'Ms. Arya', designation: 'Kindergarten', qualification: 'MTTC' },
 ];
